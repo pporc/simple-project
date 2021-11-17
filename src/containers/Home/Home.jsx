@@ -14,7 +14,7 @@ export const Home = () => {
 
   return (
     <div className="home-container">
-      {posts.length !== 0 ? (
+      {posts ? (
         <ul>
           {posts.map((value, i) => (
             <li key={i}>
@@ -28,7 +28,7 @@ export const Home = () => {
           ))}
         </ul>
       ) : (
-        <h3>no posts</h3>
+        <h3>No posts</h3>
       )}
     </div>
   );
